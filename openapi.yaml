@@ -1,39 +1,41 @@
 openapi: 3.0.4
 info:
   title: Coordinates Are Sea
-  description: Coordinates are Sea is a simple tool for checking if coordinates are in the sea. It returns if the coordinates are in the sea or not.
+  description: >-
+    Coordinates are Sea is a simple tool for checking if coordinates are in the
+    sea. It returns if the coordinates are in the sea or not.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/coordinatesaresea:
     get:
       summary: Check if Coordinates are in the Sea
-      description: Coordinates are Sea is a simple tool for checking if coordinates are in the sea. It returns if the coordinates are in the sea or not.
+      description: Check if the coordinates are in the sea
       operationId: coordinatesaresea
       parameters:
-      - name: lat
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The latitude of the coordinates
-        example: '37.7749'
-      - name: lon
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The longitude of the coordinates
-        example: '-122.4194'
+        - name: lat
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The latitude of the coordinates
+          example: 37.7749
+        - name: lon
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The longitude of the coordinates
+          example: -122.4194
       responses:
         '200':
           description: Successful Response
@@ -49,11 +51,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   latitude: 37.7749
                   longitude: -122.4194
@@ -63,7 +65,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -71,4 +73,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
