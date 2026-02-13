@@ -13,13 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/coordinatesaresea';
  */
 async function callCoordinatesAreSeaAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            lat: 37.7749,
-            lon: -122.4194
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
