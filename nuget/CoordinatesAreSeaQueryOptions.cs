@@ -12,14 +12,12 @@ namespace APIVerve.API.CoordinatesAreSea
     {
         /// <summary>
         /// The latitude of the coordinates
-        /// Example: 37.7749
         /// </summary>
         [JsonProperty("lat")]
         public string Lat { get; set; }
 
         /// <summary>
         /// The longitude of the coordinates
-        /// Example: -122.4194
         /// </summary>
         [JsonProperty("lon")]
         public string Lon { get; set; }
