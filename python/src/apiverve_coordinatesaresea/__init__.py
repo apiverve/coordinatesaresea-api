@@ -1,1 +1,3 @@
-from .apiClient import CoordinatesareseaAPIClient
+from .apiClient import CoordinatesareseaAPIClient, CoordinatesareseaAPIClientError
+
+__all__ = ['CoordinatesareseaAPIClient', 'CoordinatesareseaAPIClientError']
