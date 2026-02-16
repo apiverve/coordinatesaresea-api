@@ -44,7 +44,10 @@ from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient
 # Initialize the client with your APIVerve API key
 api = CoordinatesareseaAPIClient("[YOUR_API_KEY]")
 
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 ```
 
 ###### Simple Request
@@ -122,7 +128,10 @@ from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient, Coo
 
 api = CoordinatesareseaAPIClient("[YOUR_API_KEY]")
 
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +152,10 @@ from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient, Coo
 
 api = CoordinatesareseaAPIClient("[YOUR_API_KEY]")
 
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +189,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient, CoordinatesareseaAPIClientError
 
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 
 # Using context manager ensures proper cleanup
 with CoordinatesareseaAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +218,10 @@ from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient
 # Enable debug mode
 api = CoordinatesareseaAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "lat": 37.7749, "lon": -122.4194 }
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +236,12 @@ from apiverve_coordinatesaresea.apiClient import CoordinatesareseaAPIClient
 
 api = CoordinatesareseaAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "lat": 37.7749,
+    "lon": -122.4194
+}
+
 try:
-    query = { "lat": 37.7749, "lon": -122.4194 }
     result = api.execute(query)
     print(result)
 finally:
