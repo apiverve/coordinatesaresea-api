@@ -1,13 +1,12 @@
-CoordinatesAreSea API
+Coordinates Are Sea API
 ============
 
-Coordinates are Sea is a simple tool for checking if coordinates are in the sea. It returns if the coordinates are in the sea or not.
+Coordinates Are Sea checks whether a given latitude and longitude pair sits in the ocean or on land. Pass geographic coordinates to receive a boolean confirming if the location is in the sea.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [CoordinatesAreSea API](https://apiverve.com/marketplace/coordinatesaresea?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.CoordinatesAreSea.svg)](https://www.nuget.org/packages/APIVerve.API.CoordinatesAreSea)
+
+This is a .NET wrapper for the [Coordinates Are Sea API](https://apiverve.com/marketplace/coordinatesaresea?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the coordinatesaresea API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Coordinates Are Sea API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,9 +60,9 @@ class Program
         var apiClient = new CoordinatesAreSeaAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CoordinatesAreSeaQueryOptions {
-    Lat = 37.7749,
-    Lon = -122.4194
-};
+            Lat = 37.7749,
+            Lon = -122.4194
+        };
 
         // Make the API call
         try
@@ -93,13 +92,13 @@ class Program
 
 ## Usage
 
-The CoordinatesAreSea API documentation is found here: [https://docs.apiverve.com/ref/coordinatesaresea](https://docs.apiverve.com/ref/coordinatesaresea?utm_source=nuget&utm_medium=readme).
+The Coordinates Are Sea API documentation is found here: [https://docs.apiverve.com/ref/coordinatesaresea](https://docs.apiverve.com/ref/coordinatesaresea?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-CoordinatesAreSea API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Coordinates Are Sea API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -126,9 +125,9 @@ public class Example
         var apiClient = new CoordinatesAreSeaAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CoordinatesAreSeaQueryOptions {
-    Lat = 37.7749,
-    Lon = -122.4194
-};
+            Lat = 37.7749,
+            Lon = -122.4194
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -159,9 +158,9 @@ public class Example
         var apiClient = new CoordinatesAreSeaAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CoordinatesAreSeaQueryOptions {
-    Lat = 37.7749,
-    Lon = -122.4194
-};
+            Lat = 37.7749,
+            Lon = -122.4194
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -197,9 +196,9 @@ public class Example
         var apiClient = new CoordinatesAreSeaAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CoordinatesAreSeaQueryOptions {
-    Lat = 37.7749,
-    Lon = -122.4194
-};
+            Lat = 37.7749,
+            Lon = -122.4194
+        };
 
         try
         {
@@ -254,9 +253,9 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new CoordinatesAreSeaQueryOptions {
-    Lat = 37.7749,
-    Lon = -122.4194
-};
+            Lat = 37.7749,
+            Lon = -122.4194
+        };
 
         try
         {
@@ -387,7 +386,7 @@ using (var apiClient = new CoordinatesAreSeaAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -398,12 +397,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
