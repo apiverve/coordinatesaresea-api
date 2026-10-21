@@ -1,6 +1,6 @@
 # Coordinates Are Sea API - PHP Package
 
-Coordinates are Sea is a simple tool for checking if coordinates are in the sea. It returns if the coordinates are in the sea or not.
+Coordinates Are Sea checks whether a given latitude and longitude pair sits in the ocean or on land. Pass geographic coordinates to receive a boolean confirming if the location is in the sea.
 
 ## Installation
 
@@ -86,11 +86,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/coordinatesaresea?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/coordinatesaresea?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/coordinatesaresea?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/coordinatesaresea?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/coordinatesaresea?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/coordinatesaresea?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
