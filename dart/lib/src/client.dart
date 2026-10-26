@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Coordinates Are Sea API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/coordinatesaresea?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/coordinatesaresea?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [lat] (required) - The latitude of the coordinates [min: -90, max: 90]
