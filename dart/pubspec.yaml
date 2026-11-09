@@ -1,6 +1,6 @@
 name: apiverve_coordinatesaresea
 description: "Coordinates Are Sea checks whether a given latitude and longitude pair sits in the ocean or on land. Pass geographic coordinates to receive a boolean confirming if the location is in the sea."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/coordinatesaresea?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/coordinatesaresea-api/tree/main/dart
 
